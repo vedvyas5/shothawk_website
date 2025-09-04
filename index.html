@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShotHawk - Autonomous Threat Mitigation</title>
+    <meta name="description" content="ShotHawk provides autonomous threat mitigation devices to protect schools and businesses. Our mission is to provide peace of mind by mitigating gun and knife threats.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff4757'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    
+    <!-- Additional Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <span class="brand-text">ShotHawk</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Our Products</a>
+                <a href="#press" class="nav-link">Press</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Video/Image -->
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop" alt="Advanced security technology" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge glass-morphic">
+                    <i class="ph ph-shield-check-fill"></i>
+                    <span>Next-Gen Security Technology</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-main">Autonomous Threat</span>
+                    <span class="title-accent">Mitigation</span>
+                    <span class="title-sub">for the Modern World</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Protecting schools and businesses with cutting-edge autonomous detection and deterrent technology. 
+                    Providing peace of mind, one building at a time.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item glass-morphic">
+                        <div class="stat-icon">
+                            <i class="ph ph-buildings-fill"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Buildings Protected</span>
+                        </div>
+                    </div>
+                    <div class="stat-item glass-morphic">
+                        <div class="stat-icon">
+                            <i class="ph ph-clock-fill"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Active Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-primary glass-button">
+                        <i class="ph ph-play-circle-fill"></i>
+                        <span>Watch Technology Demo</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn btn-secondary glass-button">
+                        <i class="ph ph-info-fill"></i>
+                        <span>Learn About SPOT</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-device glass-morphic">
+                    <div class="device-screen">
+                        <div class="device-interface">
+                            <div class="interface-header">
+                                <div class="status-indicator active"></div>
+                                <span>SPOT System Online</span>
+                            </div>
+                            <div class="interface-content">
+                                <div class="radar-display">
+                                    <div class="radar-sweep"></div>
+                                    <div class="radar-dots">
+                                        <div class="radar-dot" style="--x: 30%; --y: 40%;"></div>
+                                        <div class="radar-dot" style="--x: 70%; --y: 60%;"></div>
+                                        <div class="radar-dot" style="--x: 50%; --y: 20%;"></div>
+                                    </div>
+                                </div>
+                                <div class="system-metrics">
+                                    <div class="metric">
+                                        <span class="metric-label">Detection Range</span>
+                                        <span class="metric-value">50m</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Response Time</span>
+                                        <span class="metric-value">&lt;1s</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device-base"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-orb" style="--delay: 0s; --x: 15%; --y: 25%; --size: 60px;">
+                <div class="orb-inner">
+                    <i class="ph ph-eye-fill"></i>
+                </div>
+            </div>
+            <div class="floating-orb" style="--delay: 2s; --x: 80%; --y: 20%; --size: 80px;">
+                <div class="orb-inner">
+                    <i class="ph ph-lightning-fill"></i>
+                </div>
+            </div>
+            <div class="floating-orb" style="--delay: 4s; --x: 20%; --y: 75%; --size: 70px;">
+                <div class="orb-inner">
+                    <i class="ph ph-shield-star-fill"></i>
+                </div>
+            </div>
+            <div class="floating-orb" style="--delay: 6s; --x: 85%; --y: 80%; --size: 50px;">
+                <div class="orb-inner">
+                    <i class="ph ph-target-fill"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Particle System -->
+        <div class="particle-system">
+            <div class="particle" style="--delay: 0s; --duration: 20s; --x: 10%;"></div>
+            <div class="particle" style="--delay: 5s; --duration: 25s; --x: 30%;"></div>
+            <div class="particle" style="--delay: 10s; --duration: 30s; --x: 60%;"></div>
+            <div class="particle" style="--delay: 15s; --duration: 22s; --x: 80%;"></div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop" alt="School hallway" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-grid">
+                <div class="mission-content">
+                    <div class="section-header">
+                        <div class="section-badge glass-morphic">
+                            <i class="ph ph-target-fill"></i>
+                            <span>Our Purpose</span>
+                        </div>
+                        <h2 class="section-title">Our Mission</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="mission-text glass-morphic">
+                        <p>
+                            At ShotHawk, our mission is to provide an autonomous threat mitigation device to protect and secure schools and businesses. We are committed to providing children and families a peace of mind by mitigating gun and knife threats one building at a time.
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-highlight">
+                                <i class="ph ph-shield-check-fill"></i>
+                                <span>Autonomous Protection</span>
+                            </div>
+                            <div class="feature-highlight">
+                                <i class="ph ph-heart-fill"></i>
+                                <span>Peace of Mind</span>
+                            </div>
+                            <div class="feature-highlight">
+                                <i class="ph ph-buildings-fill"></i>
+                                <span>Building by Building</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-morphic critical-stat">
+                            <div class="stat-icon danger">
+                                <i class="ph ph-users-fill"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Children die daily from gun violence</div>
+                                <div class="stat-source">Every single day in America</div>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-morphic critical-stat">
+                            <div class="stat-icon warning">
+                                <i class="ph ph-heart-break-fill"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">32</div>
+                                <div class="stat-label">Children injured daily</div>
+                                <div class="stat-source">Requiring immediate action</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop" alt="Future technology" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="vision-content">
+                <div class="section-header centered">
+                    <h2 class="section-title">Our Vision</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="vision-grid">
+                    <div class="vision-card glass-card">
+                        <div class="vision-icon">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3>Safe Communities</h3>
+                        <p>We envision our business enabling children and communities to be safe.</p>
+                    </div>
+                    
+                    <div class="vision-card glass-card featured">
+                        <div class="vision-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        <h3>2030 Goal</h3>
+                        <p>By 2030 we see ShotHawk as an installed countermeasure to Active Threat Situations in all buildings serving all communities analogous to fire sprinklers for building fires.</p>
+                    </div>
+                    
+                    <div class="vision-card glass-card">
+                        <div class="vision-icon">
+                            <i data-lucide="shield-alert"></i>
+                        </div>
+                        <h3>Universal Protection</h3>
+                        <p>Comprehensive threat mitigation for every building, every community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="products" class="solution">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop" alt="Advanced technology" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-grid">
+                <div class="solution-content">
+                    <div class="section-header">
+                        <div class="section-badge glass-morphic">
+                            <i class="ph ph-robot-fill"></i>
+                            <span>Innovation</span>
+                        </div>
+                        <h2 class="section-title">Our Solution</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    
+                    <div class="solution-description glass-morphic">
+                        <div class="solution-intro">
+                            <div class="spot-logo">
+                                <span class="spot-text">SPOT</span>
+                                <div class="spot-subtitle">Smart Protection & Observation Technology</div>
+                            </div>
+                            <p>
+                                <strong>SPOT</strong> is a responding unit that is capable to detect and deter any intruder or shooter holding a weapon autonomously.
+                            </p>
+                        </div>
+                        
+                        <div class="solution-features">
+                            <div class="feature-item enhanced">
+                                <div class="feature-icon">
+                                    <i class="ph ph-eye-fill"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <span class="feature-title">Autonomous Detection</span>
+                                    <span class="feature-desc">AI-powered threat identification</span>
+                                </div>
+                            </div>
+                            <div class="feature-item enhanced">
+                                <div class="feature-icon">
+                                    <i class="ph ph-lightning-fill"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <span class="feature-title">Instant Response</span>
+                                    <span class="feature-desc">Sub-second reaction time</span>
+                                </div>
+                            </div>
+                            <div class="feature-item enhanced">
+                                <div class="feature-icon">
+                                    <i class="ph ph-shield-star-fill"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <span class="feature-title">Active Deterrent</span>
+                                    <span class="feature-desc">Non-lethal threat neutralization</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-actions">
+                            <button class="btn btn-primary glass-button">
+                                <i class="ph ph-rocket-launch-fill"></i>
+                                <span>Join PILOT Program</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="ph ph-download-fill"></i>
+                                <span>Download Specs</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-visual">
+                    <div class="spot-showcase glass-morphic">
+                        <div class="showcase-header">
+                            <div class="spot-icon">
+                                <i class="ph ph-robot-fill"></i>
+                            </div>
+                            <div class="spot-info">
+                                <h3>SPOT System</h3>
+                                <span class="spot-version">Version 2.0</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spot-display">
+                            <div class="display-grid">
+                                <div class="display-item">
+                                    <i class="ph ph-cpu-fill"></i>
+                                    <span>AI-Powered</span>
+                                </div>
+                                <div class="display-item">
+                                    <i class="ph ph-clock-fill"></i>
+                                    <span>24/7 Active</span>
+                                </div>
+                                <div class="display-item">
+                                    <i class="ph ph-wifi-high-fill"></i>
+                                    <span>Connected</span>
+                                </div>
+                                <div class="display-item">
+                                    <i class="ph ph-shield-check-fill"></i>
+                                    <span>Secure</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spot-status">
+                            <div class="status-bar">
+                                <div class="status-fill"></div>
+                            </div>
+                            <span class="status-text">System Operational</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="statistics">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop" alt="Data visualization" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="stats-header">
+                <div class="section-badge glass-morphic">
+                    <i class="ph ph-chart-line-up-fill"></i>
+                    <span>Critical Data</span>
+                </div>
+                <h2 class="section-title">School Shootings are on the Rise</h2>
+                <div class="title-underline centered"></div>
+                <p class="stats-subtitle glass-morphic">
+                    "Each day 12 children die from Gun Violence in America. Another 32 are shot and injured" 
+                    <span class="source">– New England Journal of Medicine</span>
+                </p>
+            </div>
+            
+            <div class="stats-visual">
+                <div class="stats-chart glass-morphic">
+                    <div class="chart-header">
+                        <h3>Shootings Reported in the United States</h3>
+                        <div class="chart-trend">
+                            <i class="ph ph-trend-up-fill"></i>
+                            <span>Rising Trend</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-bars">
+                            <div class="chart-bar" style="height: 40%" data-year="2019"></div>
+                            <div class="chart-bar" style="height: 60%" data-year="2020"></div>
+                            <div class="chart-bar" style="height: 75%" data-year="2021"></div>
+                            <div class="chart-bar" style="height: 90%" data-year="2022"></div>
+                            <div class="chart-bar" style="height: 100%" data-year="2023"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>2019</span>
+                            <span>2020</span>
+                            <span>2021</span>
+                            <span>2022</span>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <div class="chart-insight">
+                        <i class="ph ph-warning-fill"></i>
+                        <span>Immediate action required to protect our communities</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content glass-morphic">
+                    <h3>Ready to Take Action?</h3>
+                    <p>Learn how SPOT can protect your facility</p>
+                    <div class="cta-actions">
+                        <button class="btn btn-accent glass-button">
+                            <i class="ph ph-info-fill"></i>
+                            <span>Find Out More</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="ph ph-phone-fill"></i>
+                            <span>Schedule Consultation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2926&auto=format&fit=crop" alt="Business partnership" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">Our Partners</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card glass-card">
+                    <div class="partner-icon">
+                        <i data-lucide="building"></i>
+                    </div>
+                    <h3>Enterprise Partners</h3>
+                </div>
+                <div class="partner-card glass-card">
+                    <div class="partner-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3>Educational Institutions</h3>
+                </div>
+                <div class="partner-card glass-card">
+                    <div class="partner-icon">
+                        <i data-lucide="handshake"></i>
+                    </div>
+                    <h3>Technology Partners</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=2946&auto=format&fit=crop" alt="Innovation and technology" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="about-content">
+                <div class="section-header centered">
+                    <h2 class="section-title">About ShotHawk</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Cutting-edge autonomous technology designed for real-world threat mitigation.</p>
+                    </div>
+                    
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>Protection</h3>
+                        <p>Dedicated to safeguarding children, families, and communities nationwide.</p>
+                    </div>
+                    
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <h3>Future</h3>
+                        <p>Building tomorrow's security infrastructure for a safer world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <!-- Background Image -->
+        <div class="section-background">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2946&auto=format&fit=crop" alt="Modern office communication" class="bg-image">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header centered">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Ready to learn more about our autonomous threat mitigation solutions?</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>Get in touch with our team</p>
+                            <button class="btn btn-outline">
+                                <i data-lucide="send"></i>
+                                Send Message
+                            </button>
+                        </div>
+                        
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="calendar"></i>
+                            </div>
+                            <h3>Schedule Demo</h3>
+                            <p>See SPOT in action</p>
+                            <button class="btn btn-outline">
+                                <i data-lucide="calendar-plus"></i>
+                                Book Demo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form glass-card">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organization</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">
+                                <i data-lucide="send"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <span class="brand-text">ShotHawk</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <p>&copy; 2023 ShotHawk - All Rights Reserved.</p>
+                    <p class="credits-small">Special Thanks to Sheggog Photography for media contributions</p>
+                </div>
+                <div class="footer-powered">
+                    <span>Powered by Innovation</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner glass-card">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <i data-lucide="cookie"></i>
+            </div>
+            <div class="cookie-text">
+                <h4>This website uses cookies</h4>
+                <p>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-primary" id="accept-cookies">
+                    <i data-lucide="check"></i>
+                    Accept
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
